@@ -5,21 +5,10 @@ Welcome to the Python Toolbox repository! This repository is a collection of var
 Email: arqamiy2k2@gmail.com
 ## Table of Contents
 
-- [Program 1](program1.py): Description of Program 1.
-- [Program 2](program2.py): Description of Program 2.
-- [Program 3](program3.py): Description of Program 3.
-- ...
-1.News Display:
-         This python script uses news api to produce news and allows the user to search for a specific news
-         
-2.Secret Language:
-          It has a function that allows user to encryot his message in a special manner which can only be decoded by ine having this file
-
-3.Guess Game:
-           It is game which randomly choses a no between 1 and 10 and asks user to guess it.
-
-4.Password Generator And Strength Checker:
-     It is script which generates a password for user with taking preferences from the user. It also gives a rating for a password based on its strength
+- [1.News Display:](program1.py): This python script uses news api to produce news and allows the user to search for a specific news
+- [2.Secret Language:](program2.py): It has a function that allows user to encryot his message in a special manner which can only be decoded by ine having this file
+- [3.Guess Game:](program3.py): It is game which randomly choses a no between 1 and 10 and asks user to guess it.
+- [4.Password Generator And Strength Checker:]: It is script which generates a password for user with taking preferences from the user. It also gives a rating for a password based on its strength.
 
 ## How to Use
 
