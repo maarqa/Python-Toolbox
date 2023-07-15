@@ -1,7 +1,17 @@
 import requests
 apikey = "API" #Api Key from newapi
+print('''News Form All Over World 📰
+-----------::------------''')
 data = input(
-  "Please Choose One of The Following \n 1.Headlines    2.Weather    3.Sports     4.War    5.Science      6.Technology  7. Any other topic: ")
+  '''Please Choose One of The Following
+1.Headlines    
+2.Weather    
+3.Sports     
+4.War    
+5.Science     
+6.Technology  
+7. Any other topic: 
+  ''')
 
 if data == "1":
   no = input("Write the amount of news you want to see:.     ")
@@ -36,3 +46,4 @@ else:
    for i in range(int(no)):
     print(response.json()["articles"][i]["title"], "\n")
     print(response.json()["articles"][i]["description"], "\n ------------")
+
