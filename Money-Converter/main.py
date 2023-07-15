@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "39d3bf720982f44839e9a954"  # Replace with your API key
+API_KEY = "API"  # Replace with your API key
 
 def get_exchange_rate(base_currency, target_currency):
     url = f"https://v6.exchangerate-api.com/v6/{API_KEY}/pair/{base_currency}/{target_currency}"
