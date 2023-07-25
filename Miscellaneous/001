@@ -1,0 +1,27 @@
+import os
+import shutil
+from datetime import datetime
+
+def rename_with_date_modified(folder_path, prefix):
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        if os.path.isfile(file_path):
+                # Get the date modified of the file
+                modified_time = os.path.getmtime(file_path)
+                modified_date = datetime.fromtimestamp(modified_time)
+                
+                # Format the date in YYYY-MM-DD format
+                date_string = modified_date.strftime("%Y-%m-%d")
+                
+                # Create the new filename with the prefix and date
+                new_filename = f"{prefix}_{date_string}_{filename}"
+                
+                # Rename the file
+                new_file_path = os.path.join(folder_path, new_filename)
+                shutil.move(file_path, new_file_path)
+                print(f"Renamed: {filename} -> {new_filename}")
+            
+folder_path = "/path/to/your/folder"  # Replace this with the actual folder path
+prefix = "pic"  # Replace this with your desired prefix
+rename_with_date_modified(folder_path, prefix)
+
